@@ -111,7 +111,7 @@ lat1, lon1 = map(float, input('Enter lat1, lon1, separated by a comma: ').split(
 lat2, lon2 = map(float, input('Enter lat2, lon2, separated by a comma: ').split(','))
 
 within = cityreader_stretch(lat1, lon1, lat2, lon2, cities)
-
+# print(within)
 if not within:
     print('No city within these coordinates found in the US')
 else:
